@@ -519,10 +519,10 @@ function AboutSplit() {
             votre événement doit être aussi unique que votre histoire.
           </p>
           <a
-            href="#"
+            href="#contact"
             className="inline-block bg-sage text-white text-xs uppercase tracking-widest px-7 py-3 hover:bg-sage-dark transition-colors rounded-sm"
           >
-            En savoir plus
+            Contactez-nous
           </a>
         </div>
         <div className="relative">
@@ -602,10 +602,10 @@ function ExclusiveDesign() {
           et à vos désirs.
         </p>
         <a
-          href="#"
+          href="#contact"
           className="inline-block self-start bg-sage text-white text-xs uppercase tracking-widest px-7 py-3 hover:bg-sage-dark transition-colors rounded-sm"
         >
-          Découvrir Plus
+          Contactez-nous
         </a>
       </div>
     </section>
@@ -667,7 +667,7 @@ function CtaBanner() {
           événement impeccable
         </h2>
         <a
-          href="#"
+          href="#contact"
           className="mt-3 bg-sage text-white text-xs uppercase tracking-widest px-8 py-3 hover:bg-sage-dark transition-colors rounded-sm"
         >
           Contactez-nous
@@ -814,6 +814,18 @@ const galleryItems: any[] = [
   {
     src: "/optimized/f.webp",
     thumb: "/optimized/f.webp",
+    label: "Salle",
+    span: "",
+  },
+  {
+    src: "/optimized/g.webp",
+    thumb: "/optimized/g.webp",
+    label: "Salle",
+    span: "",
+  },
+  {
+    src: "/optimized/h.webp",
+    thumb: "/optimized/h.webp",
     label: "Salle",
     span: "",
   },
