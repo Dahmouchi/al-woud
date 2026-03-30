@@ -339,7 +339,7 @@ function MatterportSection() {
           <button
             onClick={() => setOpen(true)}
             id="open-virtual-tour"
-            className="mt-6 group inline-flex items-center gap-2 text-sage border border-sage text-xs uppercase tracking-widest px-7 py-3 rounded-sm hover:bg-sage hover:text-white transition-all duration-300"
+            className="mt-6 group cursor-pointer inline-flex items-center gap-2 text-sage border border-sage text-xs uppercase tracking-widest px-7 py-3 rounded-sm hover:bg-sage hover:text-black transition-all duration-300"
           >
             <svg
               className="w-3.5 h-3.5 translate-x-0.5"
@@ -478,12 +478,12 @@ function MatterportSection() {
 
           {/* Shimmer sweep */}
           <span
-            className="shimmer-line absolute inset-y-0 w-8 bg-gradient-to-r from-transparent via-white/50 to-transparent pointer-events-none"
+            className="shimmer-line absolute inset-y-0 w-8 bg-linear-to-r from-transparent via-white/50 to-transparent pointer-events-none"
             style={{ left: "-2rem" }}
           />
 
           {/* Top gloss */}
-          <span className="absolute top-1 left-2 right-2 h-5 rounded-full bg-gradient-to-b from-white/40 to-transparent pointer-events-none" />
+          <span className="absolute top-1 left-2 right-2 h-5 rounded-full bg-linear-to-b from-white/40 to-transparent pointer-events-none" />
 
           {/* Play icon */}
           <Play
@@ -924,7 +924,7 @@ function Gallery() {
                   loading="lazy"
                 />
                 {/* Superposition */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
                 {/* Libellé et icône de zoom */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                   <p className="text-white text-xs uppercase tracking-widest font-semibold">
@@ -958,7 +958,7 @@ function Gallery() {
           <div className="mt-12 flex justify-center">
             <button
               onClick={() => setExpanded(!expanded)}
-              className="group flex items-center gap-2 text-sage border border-sage text-xs uppercase tracking-widest px-8 py-3 rounded-sm hover:bg-sage hover:text-white transition-all duration-300"
+              className="group flex items-center gap-2 text-sage border border-sage text-xs uppercase tracking-widest px-8 py-3 rounded-sm hover:bg-sage hover:text-amber-700 cursor-pointer transition-all duration-300"
             >
               {expanded ? "Voir Moins" : "Voir Plus"}
               <svg
@@ -1115,7 +1115,7 @@ function Gallery() {
                   e.stopPropagation();
                   setLightbox(i);
                 }}
-                className={`flex-shrink-0 w-14 h-10 rounded overflow-hidden border-2 transition-all duration-200 ${
+                className={`shrink-0 w-14 h-10 rounded overflow-hidden border-2 transition-all duration-200 ${
                   i === lightbox
                     ? "border-white scale-110 opacity-100"
                     : "border-white/20 opacity-50 hover:opacity-80"

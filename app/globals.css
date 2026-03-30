@@ -34,5 +34,8 @@ body {
 }
 
 .bg-sage {
-  background-color: #9ab58a;
+  background-color: #bb8753ff;
+}
+.border-sage {
+  border-color: #bb8753ff;
 }
