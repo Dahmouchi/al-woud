@@ -692,8 +692,14 @@ const galleryItems: any[] = [
     span: "",
   },
   {
-    src: "/optimized/3.webp",
-    thumb: "/optimized/3.webp",
+    src: "/optimized/19.jpg",
+    thumb: "/optimized/19.jpg",
+    label: "Salle",
+    span: "",
+  },
+  {
+    src: "/optimized/18.jpg",
+    thumb: "/optimized/18.jpg",
     label: "Salle",
     span: "",
   },
@@ -721,17 +727,18 @@ const galleryItems: any[] = [
     label: "Salle",
     span: "",
   },
+
+  {
+    src: "/optimized/9.webp",
+    thumb: "/optimized/9.webp",
+    label: "Salle",
+    span: "col-span-2",
+  },
   {
     src: "/optimized/8.webp",
     thumb: "/optimized/8.webp",
     label: "Salle",
     span: "row-span-2",
-  },
-  {
-    src: "/optimized/9.webp",
-    thumb: "/optimized/9.webp",
-    label: "Salle",
-    span: "",
   },
   {
     src: "/optimized/10.webp",
@@ -836,7 +843,7 @@ function Gallery() {
   const [touchStart, setTouchStart] = useState<any>(null);
   const [expanded, setExpanded] = useState(false);
 
-  const initialItems = 8;
+  const initialItems = 9;
   const total = galleryItems.length;
   const displayedItems = expanded
     ? galleryItems
